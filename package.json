@@ -1,0 +1,48 @@
+{
+  "name": "elrond-merkle-tree-generator",
+  "version": "1.0.5",
+  "description": "A JS Library to generate the merkle tree and gets it's root and proof for any given distribution for Elrond",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Checkerchain-Protocol/Merkle-Tree-Generator"
+  },
+  "keywords": [
+    "elrond",
+    "checkerchain",
+    "checkr",
+    "merkle-tree"
+  ],
+  "author": "CheckerChain Protocol",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/mocha": "^9.1.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@elrondnetwork/erdjs": "^10.2.5",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.27"
+  }
+}
