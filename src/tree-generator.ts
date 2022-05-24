@@ -5,11 +5,11 @@ const { Address } = require('@elrondnetwork/erdjs');
 interface DataInterface {
   wallet: string;
   amount: string;
-  index:string;
+  index: string;
 }
 const numberToHex = (el: String) => {
   let h = Number(el).toString(16);
-  return h;
+  return h.length % 2 === 0 ? h : `0${h}`;
 };
 const getHashedData = (el: any) => {
   const buf = Buffer.concat([
@@ -29,7 +29,7 @@ export const generateTree = (data: DataInterface[]) => {
     accumulator.push({
       wallet: d.wallet,
       hex: hashedData,
-      index:d.index,
+      index: d.index,
       amount: d.amount,
     });
   });
@@ -40,7 +40,7 @@ export const generateTree = (data: DataInterface[]) => {
   accumulator.forEach((data) => {
     const proof = tree.getHexProof(data.hex);
     data.proof = proof;
-    data.hex = `0x${data.hex.toString('hex')}`
+    data.hex = `0x${data.hex.toString('hex')}`;
   });
   return { root: `0x${merkleRoot}`, data: accumulator };
 };
