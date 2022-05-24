@@ -13,7 +13,7 @@ const numberToHex = (el: String) => {
 };
 const getHashedData = (el: any) => {
   const buf = Buffer.concat([
-    Buffer.from(el.index, 'hex'),
+    Buffer.from(numberToHex(el.index), 'hex'),
     Buffer.from(new Address(el.wallet).valueHex, 'hex'),
     Buffer.from(numberToHex(el.amount), 'hex'),
   ]);
