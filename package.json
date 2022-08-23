@@ -1,6 +1,6 @@
 {
-  "name": "elrond-merkle-tree-generator",
-  "version": "1.0.5",
+  "name": "@checkerchain/elrond-merkle-tree-generator",
+  "version": "1.0.1",
   "description": "A JS Library to generate the merkle tree and gets it's root and proof for any given distribution for Elrond",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -32,7 +32,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.5.1",
-    "@types/mocha": "^9.1.1",
     "jest": "^27.4.5",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.2",

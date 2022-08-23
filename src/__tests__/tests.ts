@@ -23,49 +23,49 @@ const testData = [
 ];
 
 const result = {
+  root: '0xe75b7491789f69781cbbe92ff80753169b3250ebd2e7fefbd75cebedf96b8fb7',
   data: [
     {
-      index: '01',
       wallet: 'erd13wsm72uc0c2fwgtpwjn0xlrzfdh7kg59jmrnfcjh9fhqsp7g5yas5sy69l',
+      hex: '0x6d9938cc21e1ad5cb14b627e3771d557a2d39baa2c56df0f680115541210e1e8',
+      index: '01',
       amount: '1000000',
-      hex: '0xcf5b09abab859190378da6801b5af134fcf6ce275348a7d34074d308c70c70b0',
       proof: [
-        '0xfdecaa4d8d58e76af23ffa5b9f2c35fbcfaa8af09371b2bbcea143367a5aaf44',
-        '0x21b1202c9bb204384147e336fc193578f08e49012ad1cdd90465ec6f539bad06',
+        '0x69b26dc67a9b125f853867e9577d0691fa0d91786011563acba7cfc489f009fc',
+        '0xbfeb305fd5d1d1a18657a86fc3192ce174e2a4b697864b6ec56a46bfefc9d6d3',
       ],
     },
     {
-      index: '02',
       wallet: 'erd14pgqys8lzhdfnuseev4yh3hfrq2423u8wxkd3fkxsvvpvyannzrs88l2nt',
+      hex: '0x71d821aa47cb9279459a38cd0b781cd13fd3105c9b3903b008171511efb639d1',
+      index: '02',
       amount: '1000000',
-      hex: '0x73910e8412743e95b5d5cb5092a8e96cb030b81ac53321b2f3585c06b03fc01e',
       proof: [
-        '0x7b5c64c4b91caaaef166d9940b78678b05247f25a548a65297ae342fa92bbc49',
-        '0xd58db09f703c9f26b2de008c7821dd2a0e52548f318a0bcafc8d8ebec0fdeaf5',
+        '0xe84aaa6301dedb01ee5d3b2c09ee0d5a277317755c153e87ad7abfc924cb15fa',
+        '0x316ede9dda6676c32db0c540302d3de59bbd55ca7bf4f850f1e2842f20c0af57',
       ],
     },
     {
-      index: '03',
       wallet: 'erd1xd4amn9w3udwjz9p4myd3rxgtkks807myn5hcsagtd7nw57g3a5q06e743',
+      hex: '0xe84aaa6301dedb01ee5d3b2c09ee0d5a277317755c153e87ad7abfc924cb15fa',
+      index: '03',
       amount: '1000000',
-      hex: '0xfdecaa4d8d58e76af23ffa5b9f2c35fbcfaa8af09371b2bbcea143367a5aaf44',
       proof: [
-        '0xcf5b09abab859190378da6801b5af134fcf6ce275348a7d34074d308c70c70b0',
-        '0x21b1202c9bb204384147e336fc193578f08e49012ad1cdd90465ec6f539bad06',
+        '0x71d821aa47cb9279459a38cd0b781cd13fd3105c9b3903b008171511efb639d1',
+        '0x316ede9dda6676c32db0c540302d3de59bbd55ca7bf4f850f1e2842f20c0af57',
       ],
     },
     {
-      index: '04',
       wallet: 'erd162tsmpj0rw8zmfw3yrv6e82qk50ny4e4gtsumqfxf7ddn32t92xqpma2tp',
+      hex: '0x69b26dc67a9b125f853867e9577d0691fa0d91786011563acba7cfc489f009fc',
+      index: '04',
       amount: '1000000',
-      hex: '0x7b5c64c4b91caaaef166d9940b78678b05247f25a548a65297ae342fa92bbc49',
       proof: [
-        '0x73910e8412743e95b5d5cb5092a8e96cb030b81ac53321b2f3585c06b03fc01e',
-        '0xd58db09f703c9f26b2de008c7821dd2a0e52548f318a0bcafc8d8ebec0fdeaf5',
+        '0x6d9938cc21e1ad5cb14b627e3771d557a2d39baa2c56df0f680115541210e1e8',
+        '0xbfeb305fd5d1d1a18657a86fc3192ce174e2a4b697864b6ec56a46bfefc9d6d3',
       ],
     },
   ],
-  root: '0x6706f2e66ff1c09057cec70d8f14cf37c92ac453396858defd7857c455858a39',
 };
 
 test('Merkle Tree Generator', () => {

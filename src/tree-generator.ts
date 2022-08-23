@@ -7,8 +7,8 @@ interface DataInterface {
   amount: string;
   index: string;
 }
-const numberToHex = (el: String) => {
-  let h = Number(el).toString(16);
+const numberToHex = (el: string) => {
+  const h = Number(el).toString(16);
   return h.length % 2 === 0 ? h : `0${h}`;
 };
 const getHashedData = (el: any) => {
@@ -37,10 +37,10 @@ export const generateTree = (data: DataInterface[]) => {
     sort: true,
   });
   const merkleRoot = tree.getRoot().toString('hex');
-  accumulator.forEach((data) => {
-    const proof = tree.getHexProof(data.hex);
-    data.proof = proof;
-    data.hex = `0x${data.hex.toString('hex')}`;
+  accumulator.forEach((acc) => {
+    const proof = tree.getHexProof(acc.hex);
+    acc.proof = proof;
+    acc.hex = `0x${acc.hex.toString('hex')}`;
   });
   return { root: `0x${merkleRoot}`, data: accumulator };
 };
