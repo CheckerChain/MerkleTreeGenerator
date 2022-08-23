@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Checkerchain-Protocol/Merkle-Tree-Generator"
+    "url": "git+https://github.com/CheckerChain/MerkleTreeGenerator"
   },
   "keywords": [
     "elrond",
